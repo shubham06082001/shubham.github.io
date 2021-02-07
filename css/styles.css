@@ -1,0 +1,280 @@
+body {
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: monospace;
+    font-weight: 500;
+}
+
+p {
+    color: grey;
+}
+a{
+    color: white;
+}
+
+a:hover {
+  text-decoration: none;
+    color: white
+}
+
+a:active {
+  text-decoration: underline;
+    color: white;
+}
+.big-heading {
+    font-family: 'Pangolin', cursive;
+    size: 3em;
+    line-height: 1.5;
+    color: white;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+#title {
+    background-color: pink;
+    color: white;
+    text-align: left;
+}
+
+.container-fluid {
+    padding: 3% 15% 7%;
+}
+
+/* sections */
+.colored-section {
+    background-color: pink;
+    color: white;
+
+}
+
+.white-section {
+    color: black;
+}
+
+/* navigation bar */
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: bold;
+}
+
+/* download buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* title image */
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+    border-radius: 10%;
+    box-shadow:
+}
+
+#features {
+    padding: 7% 15%;
+    background-color: white;
+    position: relative;
+    /* z-index: 1; */
+}
+
+.feature-title {
+    font-family: sans-serif;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.feature-box {
+    padding: 5%;
+}
+
+.icon {
+    color: rgb(10, 117, 180);
+    margin-bottom: 1rem;
+}
+
+.icon:hover {
+    color: purple;
+}
+
+/* testimonials */
+#testimonials {
+    background-color: #ef8172;
+
+}
+#project {
+	font-size: 4rem;
+}
+
+.testimonial-text {
+    font-family: monospace;
+    line-height: 1.5;
+    font-size: 3rem;
+}
+
+
+.project-image {
+    width: 200px;
+    border-radius: 15px;
+    border: 3px solid white;
+    margin: 20px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+#press {
+    background-color: #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    max-width: 150px;
+    height: 100px;
+    margin: 20px 20px 50px;
+}
+
+.skills-logo {
+    background-color: white;
+    /*    width: 100px;*/
+    max-width: 150px;
+    height: 100px;
+    margin: 10px 10px 50px;
+
+}
+
+/* pricing section */
+.white-section{
+    background-color: #ffc38b;
+}
+.section-heading{
+    color: white;
+	font-family: 'Balsamiq Sans', cursive;
+    align-content: center;
+}
+#pricing {
+    padding: 100px;
+}
+
+
+.price-text {
+    font-family: monospace;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing column {
+    padding: 3% 2%;
+    
+}
+
+/* cta section */
+.call {
+    background-color: pink;
+    color: white;
+    font-family: "Montserrat";
+    padding: 7% 15%;
+}
+
+.social {
+    cursor: progress;
+}
+
+#footer {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    margin-top: 20px;
+}
+
+i {
+    padding: 10px;
+}
+
+.link-button {
+    color: white;
+    text-decoration: bold;
+    display: inline-block;
+    border-radius: 12px;
+    border: 2px solid white;
+    float: right;
+
+}
+
+.link-button:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media (max-width: 1028px) {
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+/*for arrowed buttons on hover*/
+.link-button {
+  text-align: center;
+  font-size: 28px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0,.7);
+}
+
+.link-button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.link-button:after {
+  content: '»';
+    color: white;
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.link-button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.link-button:hover:after {
+  opacity: 1;
+  right: 10px;
+}

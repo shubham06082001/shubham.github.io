@@ -1,0 +1,248 @@
+body
+{
+    font: arial, helvetica ,sans-serif;
+}
+#container {
+    width:1050px;
+/*    height:100px;*/
+    margin: 0 auto;
+/*    border:1px solid grey;*/
+    background-color: none;
+    
+        
+}
+h1 a
+{
+    font-size: 50px;
+    font-weight: 100;
+    color:#861BBF;
+    text-decoration: none;
+    
+    
+}
+#searchbox {
+    float: right;
+    
+    background: linear-gradient(#E4F289,#B7E953);
+    -webkit-background: linear-gradient(#E4F289,#B7E953);
+    -moz-background: linear-gradient(#E4F289,#B7E953);
+    -ms-background: linear-gradient(#E4F289,#B7E953);
+    -o-background: linear-gradient(#E4F289,#B7E953);
+    width: 400px;
+    height: 50px;
+    padding: 20px 20px 0 20px;
+    margin-top: 20px;
+    
+    
+    
+}
+
+#brand {
+    float: left;
+    
+}
+
+#header {
+    height: 100px;
+    padding: 10px 0;
+    
+}
+
+.text {
+      float: left;  
+      width: 200px;
+    padding:5px;
+    color:#E36ABC;
+    font-size: 15px;
+    background: white url(images/search.png) right center no-repeat;
+    border: 1px solid #c8d03e;
+    
+ 
+    
+}
+
+.submit {
+    float: right;
+    padding: 5px;
+    font-weight: bold;
+    color:white;
+    background: #A751D6;
+    font-size: 16px;
+    
+    
+}
+
+.clear {
+    clear: both;
+}
+ul
+{
+    list-style: none;
+    
+}
+#menu
+{
+    height: 70px;
+    background: linear-gradient(#F8F594,#D5D533);
+    padding: 7px 0 ;
+    
+}
+#menu ul li
+{
+   float: left;
+    padding: 0px 30px;
+    height: 30px;
+    border-right: 1px solid #5d12e7 ;
+
+    
+    
+        
+}
+#menu ul li a
+{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #5d12e7 ;
+    /*    to give space between the the bar and words and make it centerd*/
+    line-height: 30px ;
+    transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    
+    
+    
+}
+#menu ul li:last-child
+{
+    border-right: none;
+}
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color: #b314db;
+
+}
+#introduction {
+    background: linear-gradient(#e5f2bb,#b7e952);
+    -webkit-background: linear-gradient(#e5f2bb,#b7e952);
+    -mos-background: linear-gradient(#e5f2bb,#b7e952);
+    -ms-background: linear-gradient(#e5f2bb,#b7e952);
+    -o-background: linear-gradient(#e5f2bb,#b7e952);
+    
+    padding: 30px;
+    margin: 16px 0;
+    
+    
+    
+}
+#introduction h3{
+    font-size: 45px;
+    color: #316901;
+    font-weight: normal;
+    
+    
+}
+#introduction p
+{
+    font-size: 25px;
+    color: #628f19;
+    text-align: justify;
+    text-shadow: 1;
+    text-transform: lowercase capitalize;
+    font-family: monospace;
+    
+    
+    
+}
+
+.sidebar {
+    height: 500px;
+    width: 450px;
+    border: 1px solid #baf46f;
+    border-radius: 20px;
+    padding: 10px 30px;
+    
+    
+    
+    
+}
+.sidebar h3
+{
+    color: #b314db;
+    font-size: 30px;
+    
+}
+.sidebar ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: #b314db;
+    transition: font-size 0.3s ease;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    
+    
+}
+#leftsidebar ul li
+{
+    padding: 4px 0 4px 10px;
+/*    padding-bottom: 7px;*/
+    list-style-image: url(images/arrow.png);
+    padding-left: 10px;
+    
+    
+    
+}
+.sidebar ul
+{
+    padding-top: 8px;
+}
+
+.sidebar ul li a:hover, .sidebar ul li a.active{
+    text-decoration: none;
+    color: #b314db;
+    font-size: 23px;
+    font-weight: bold;
+    
+    
+    
+}
+
+#leftsidebar {
+    float: left;
+    
+}
+
+#rightsidebar {
+    float: right;
+}
+#rightsidebar ul li
+{
+/*
+    padding-bottom: 16px;
+    padding-top: 20px;
+*/
+    padding: 17px 0 17px 50px;
+    background: url(images/tick.png) no-repeat left center;
+    padding-left: 30px;
+    
+}
+
+.footer {
+    height: 60px;
+    background: linear-gradient(#f6f390,#d5d533);
+    -webkit-background: linear-gradient(#f6f390,#d5d533);
+    -moz-background: linear-gradient(#f6f390,#d5d533);
+    -ms-background: linear-gradient(#f6f390,#d5d533);
+    -o-background: linear-gradient(#f6f390,#d5d533);
+    padding: 10px 30px;
+    margin-top: 20px;
+    
+    
+    
+}
