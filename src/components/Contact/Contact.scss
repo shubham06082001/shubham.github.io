@@ -1,0 +1,283 @@
+@import "../../global.scss";
+
+.contact {
+    background-color: $black;
+    display: flex;
+    height: 87%;
+    // padding-top: 30px;
+
+    @include mobile {
+        flex-direction: column;
+    }
+
+    .left {
+        flex: 1;
+        overflow: hidden;
+        // padding: 10px;
+        margin-top: 20px;
+        border: 2px solid whitesmoke;
+        border-radius: 15px;
+        z-index: 5;
+
+        img {
+            height: 100%;
+            background-color: $white;
+        }
+    }
+
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+
+        @keyframes flip {
+            0% {
+                transform: perspective(400px) translateZ(0) rotateY(0) scale(1);
+                animation-timing-function: ease-out;
+            }
+
+            40% {
+                transform: perspective(400px) translateZ(150px) rotateY(170deg) scale(1);
+                animation-timing-function: ease-out;
+            }
+
+            50% {
+                transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+                animation-timing-function: ease-in;
+            }
+
+            80% {
+                transform: perspective(400px) translateZ(0) rotateY(360deg) scale(.95);
+                animation-timing-function: ease-in;
+            }
+
+            100% {
+                transform: perspective(400px) translateZ(0) rotateY(360deg) scale(1);
+                animation-timing-function: ease-in;
+            }
+        }
+
+        h2 {
+            font-size: 40px;
+            color: $white;
+            text-transform: uppercase;
+            border-bottom: 4px double $white;
+            margin-bottom: 40px;
+            z-index: 5;
+            // margin-top: 20px;
+
+            animation-duration: 2.5s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            backface-visibility: visible;
+            animation-name: flip;
+
+        }
+
+        form {
+            width: 70%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            border: 1px solid $white;
+            border-radius: 20px;
+            background-color: rgba(250, 244, 245, 0.1);
+
+            input {
+                width: 300px;
+                height: 40px;
+                font-size: 22px;
+                // padding: 0px 0px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid $white;
+                border-radius: 4px;
+                background-color: rgb(250, 244, 245);
+
+                &::placeholder {
+                    font-size: 18px;
+                }
+
+                @include mobile {
+                    width: 200px;
+                    height: 20px;
+                }
+            }
+
+            textarea {
+                width: 300px;
+                height: 200px;
+                font-size: 20px;
+
+                padding: 5px 10px;
+                box-sizing: border-box;
+                border: 2px solid #ccc;
+                border-radius: 4px;
+                background-color: rgb(250, 244, 245);
+
+                @include mobile {
+                    width: 200px;
+                    height: 100px;
+                }
+
+                &::placeholder {
+                    font-size: 16px;
+                }
+            }
+
+            button {
+                width: 150px;
+                height: 50px;
+                color: $black;
+                background-color: #00FF80;
+                border: none;
+                border-radius: 10px;
+                font-weight: 500;
+                cursor: pointer;
+                font-size: 20px;
+
+                &:focus {
+                    outline: none;
+                }
+
+            }
+
+            span {
+                color: $hotPink;
+                transition: all 1s ease-in-out;
+                font-size: 18px;
+                border: 1px solid $white;
+                padding: 4px 10px;
+                border-radius: 5px;
+                text-transform: uppercase;
+
+                .emoji {
+                    font-size: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    border: none !important;
+                }
+            }
+        }
+    }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+.footer {
+    // position: fixed;
+    width: 100%;
+    background-color: $black;
+    color: $white;
+    text-align: center;
+    font-family: "Poppins",
+        sans-serif;
+    z-index: 5;
+
+
+
+    .wrapper {
+        display: inline-flex;
+    }
+
+    .wrapper .icon {
+        position: relative;
+        background-color: $black;
+        color: $white;
+        border-radius: 50%;
+        padding: 15px;
+        margin: 10px 40px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        border: 1px solid $white;
+        z-index: 5;
+    }
+
+    .wrapper .tooltip {
+        position: absolute;
+        top: 0;
+        font-size: 13px;
+        background-color: $black;
+        padding: 5px 8px;
+        border-radius: 5px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        pointer-events: none;
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        visibility: hidden;
+        z-index: 5;
+
+
+    }
+
+    .wrapper .tooltip::before {
+        height: 8px;
+        width: 8px;
+        opacity: 0;
+        bottom: -3px;
+        transform: translate(-50%) rotate(45deg);
+        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .wrapper .icon:hover .tooltip {
+        top: 10px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper .icon:hover span,
+    .wrapper .icon:hover .tooltip {
+        text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .wrapper .facebook:hover,
+    .wrapper .facebook:hover .tooltip,
+    .wrapper .facebook:hover .tooltip::before {
+        background-color: #3b5999;
+        color: #ffffff;
+    }
+
+    .wrapper .twitter:hover,
+    .wrapper .twitter:hover .tooltip,
+    .wrapper .twitter:hover .tooltip::before {
+        background-color: #46c1f6;
+        color: #ffffff;
+    }
+
+    .wrapper .instagram:hover,
+    .wrapper .instagram:hover .tooltip,
+    .wrapper .instagram:hover .tooltip::before {
+        background-color: #e1306c;
+        color: #ffffff;
+    }
+
+    .wrapper .github:hover,
+    .wrapper .github:hover .tooltip,
+    .wrapper .github:hover .tooltip::before {
+        background-color: #333333;
+        color: #ffffff;
+    }
+
+    .wrapper .youtube:hover,
+    .wrapper .youtube:hover .tooltip,
+    .wrapper .youtube:hover .tooltip::before {
+        background-color: $codechef;
+        color: #ffffff;
+    }
+
+}

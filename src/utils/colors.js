@@ -1,0 +1,25 @@
+const colors = {
+  white: '#fff',
+  black: '#000',
+  lightPurple: '#BFA2DB',
+  lightGreen: '#57CC99',
+  lightBlue: '#3DB2FF',
+  fantasyRed: '#FF2442',
+  reddishBrownLight: '#E63E6D',
+  reddishBrownDark: '#7D1935',
+  lightPink: '#FD6F96',
+  lightYellow: '#FFDAC7',
+  snowPink: '#FFADAD',
+  pink: '#EB92BE',
+  hotPink: '#F037A5',
+  blue: '#290FBA',
+  limeBlue: '#B5DEFF',
+  limeGreen: '#C1FFD7',
+  limePurple: '#CAB8FF',
+  linkedIn: '#2b65bc',
+  github: '#171b21',
+  instagram: '#b72e4c',
+  codechef: '#3d291c',
+};
+
+export default colors;

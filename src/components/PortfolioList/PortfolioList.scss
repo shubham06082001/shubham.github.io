@@ -1,0 +1,32 @@
+@import "../../global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.portfolioList {
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-right: 50px;
+    padding: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Space Mono',
+        monospace;
+    border: 1px solid whitesmoke;
+    z-index: 5;
+
+    @include mobile {
+        margin-right: 20px;
+    }
+
+    &.active {
+        background-color: $mainColor;
+        color: white;
+        font-weight: bold;
+        font-size: 22px;
+    }
+
+    &:hover {
+        background-color: blanchedalmond;
+        color: $black;
+        font-size: 22px;
+    }
+}

@@ -1,0 +1,46 @@
+$mainColor: #FD6F96;
+
+
+$white: #fff;
+$black: #000;
+$lightPurple: #BFA2DB;
+$lightGreen: #57CC99;
+$lightBlue: #3DB2FF;
+$fantasyRed: #FF2442;
+$reddishBrownLight: #E63E6D;
+$reddishBrownDark: #7D1935;
+$lightPink: #FD6F96;
+$lightYellow: #FFDAC7;
+$snowPink: #FFADAD;
+$pink: #EB92BE;
+$hotPink: #F037A5;
+$blue: #290FBA;
+$limeBlue: #B5DEFF;
+$limeGreen: #C1FFD7;
+$limePurple: #CAB8FF;
+$linkedIn: #2b65bc;
+$github: #171b21;
+$instagram: #b72e4c;
+$codechef: #3d291c;
+$darkBlue: #15023a;
+
+
+$lightBlack: #2C394B;
+$mediumBlue: #2C2E43;
+$BlackBlue: #595260;
+$lightGrey: #334756;
+$lowPurple: #3E2C41;
+$thickBlue: #112031;
+$lowToneGrey: #423F3E;
+$mediumThickBlue: #0A1931;
+$darkPurple: #26001B;
+
+
+
+$width: 768px;
+
+@mixin mobile {
+    @media (max-width: #{$width}) {
+        @content
+    }
+}
